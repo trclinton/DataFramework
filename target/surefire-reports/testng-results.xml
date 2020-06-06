@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Page loaded successfully]]>
+    </line>
+    <line>
+      <![CDATA[Bank Manager Login Button is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Successfully clicked on: Bank Manager Login Button]]>
+    </line>
+    <line>
+      <![CDATA[Add Customer Button is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Add Customer Button is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Successfully clicked on: Add Customer Button]]>
+    </line>
+    <line>
+      <![CDATA[First Name Text Box is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Found : First Name Text Box and value has been set as Reynold]]>
+    </line>
+    <line>
+      <![CDATA[Last Name Text Box is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Found : Last Name Text Box and value has been set as Clinton]]>
+    </line>
+    <line>
+      <![CDATA[Postal Code is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Found : Postal Code and value has been set as 560016.0]]>
+    </line>
+    <line>
+      <![CDATA[Add Customer Submit Button is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Successfully clicked on: Add Customer Submit Button]]>
+    </line>
+    <line>
+      <![CDATA[Alert Handled Successfully]]>
+    </line>
+  </reporter-output>
+  <suite name="Dat Driven TestCases" duration-ms="3592" started-at="2020-05-24T18:08:46 IST" finished-at="2020-05-24T18:08:49 IST">
+    <groups>
+    </groups>
+    <test name="Login Test" duration-ms="1238" started-at="2020-05-24T18:08:46 IST" finished-at="2020-05-24T18:08:47 IST">
+      <class name="testcases.LoginTest">
+        <test-method status="PASS" signature="LoginAsBankManager()[pri:0, instance:testcases.LoginTest@5677323c]" name="LoginAsBankManager" duration-ms="1203" started-at="2020-05-24T18:08:46 IST" finished-at="2020-05-24T18:08:47 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Page loaded successfully]]>
+            </line>
+            <line>
+              <![CDATA[Bank Manager Login Button is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Successfully clicked on: Bank Manager Login Button]]>
+            </line>
+            <line>
+              <![CDATA[Add Customer Button is displayed on the web page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LoginAsBankManager -->
+      </class> <!-- testcases.LoginTest -->
+    </test> <!-- Login Test -->
+    <test name="Add Customer Test" duration-ms="2329" started-at="2020-05-24T18:08:47 IST" finished-at="2020-05-24T18:08:49 IST">
+      <class name="testcases.AddCustomerTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.AddCustomerTest@3e27aa33]" name="setUp" is-config="true" duration-ms="9557" started-at="2020-05-24T18:08:36 IST" finished-at="2020-05-24T18:08:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addCustomer()[pri:0, instance:testcases.AddCustomerTest@3e27aa33]" name="addCustomer" duration-ms="2327" started-at="2020-05-24T18:08:47 IST" finished-at="2020-05-24T18:08:49 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Add Customer Button is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Successfully clicked on: Add Customer Button]]>
+            </line>
+            <line>
+              <![CDATA[First Name Text Box is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Found : First Name Text Box and value has been set as Reynold]]>
+            </line>
+            <line>
+              <![CDATA[Last Name Text Box is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Found : Last Name Text Box and value has been set as Clinton]]>
+            </line>
+            <line>
+              <![CDATA[Postal Code is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Found : Postal Code and value has been set as 560016.0]]>
+            </line>
+            <line>
+              <![CDATA[Add Customer Submit Button is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Successfully clicked on: Add Customer Submit Button]]>
+            </line>
+            <line>
+              <![CDATA[Alert Handled Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCustomer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.AddCustomerTest@3e27aa33]" name="tearDown" is-config="true" duration-ms="1579" started-at="2020-05-24T18:08:49 IST" finished-at="2020-05-24T18:08:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.AddCustomerTest -->
+    </test> <!-- Add Customer Test -->
+  </suite> <!-- Dat Driven TestCases -->
+</testng-results>

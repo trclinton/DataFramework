@@ -1,0 +1,12 @@
+{
+  "banking": {
+    "url": "http://www.way2automation.com/angularjs-protractor/banking/#/login",
+    "credentials": [
+      {"username": "clintonr", "password": "Time@2233"},
+      {"username": "clintore", "password": "Time@2020"}
+    ]
+  },
+  "magazine.store": {
+    "url": ""
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Dat Driven TestCases">
+
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+        <listener class-name="listeners.CustomListeners"></listener>
+    </listeners>
+
+    <test name="Login Test">
+        <classes>
+            <class name="testcases.LoginTest" />
+        </classes>
+    </test>
+
+    <test name="Add Customer Test">
+        <classes>
+            <class name="testcases.AddCustomerTest"></class>
+        </classes>
+    </test>
+
+    <test name="Open Account">
+        <classes>
+            <class name="testcases.OpenAccountTest"></class>
+        </classes>
+    </test>
+
+</suite>

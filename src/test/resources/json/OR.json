@@ -1,0 +1,19 @@
+{
+  "bankManager":{
+    "addCustomer": {
+      "bankManagerLoginButton": "button[ng-click='manager()']",
+      "addCustomerButton": "button[ng-click='addCust()']",
+      "firstName": "input[placeholder='First Name']",
+      "lastName": "input[placeholder='Last Name']",
+      "postCode": "input[placeholder='Post Code']",
+      "addCustomerSubmitButton": "button[type='submit']"
+    },
+    "OpenAccount": {
+      "openAccountButton": "button[ng-click='openAccount()']",
+      "customerSelectDropdown": "select[name='userSelect']"
+    }
+  },
+  "customer": {
+
+  }
+}
