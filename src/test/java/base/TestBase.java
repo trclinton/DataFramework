@@ -39,6 +39,7 @@ public class TestBase {
     public static ReadExcel read = new ReadExcel();
     public static LinkedHashMap<Object, LinkedHashMap<Object, Object>> excelConfigData = read.excelFileReader(FilePath.excelFilePath, "Config");
     public static LinkedHashMap<Object, LinkedHashMap<Object, Object>> excelTestData = read.excelFileReader(FilePath.excelFilePath, "TestData");
+    public static LinkedHashMap<Object, LinkedHashMap<Object, Object>> excelTestCases = read.excelFileReader(FilePath.excelFilePath, "TestCases");
     public static Map addCustomer;
     public static Map openAccount;
     public static Logger log = Logger.getLogger("Banking Application");

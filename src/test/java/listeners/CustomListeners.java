@@ -8,6 +8,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.SkipException;
 import utilities.FilePath;
 
 import java.io.File;
@@ -43,9 +44,7 @@ public class CustomListeners extends TestBase implements ITestListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
-
     // When Test case get Skipped, this method is called.
     public void onTestSkipped(ITestResult Result) {
         System.out.println("The name of the testcase Skipped is : " + Result.getName());
@@ -54,6 +53,9 @@ public class CustomListeners extends TestBase implements ITestListener {
     // When Test case get Started, this method is called.
     public void onTestStart(ITestResult Result) {
         test = extent.createTest(Result.getName());
+        if (!genericKey.isTestRunnable(Result.getName())){
+            throw new SkipException("Skipping the test "+ Result.getName().toUpperCase()+" as the RunMode has been set to 'N'");
+        }
         System.out.println(Result.getName() + " test case started");
     }
 

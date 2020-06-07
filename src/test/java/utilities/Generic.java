@@ -164,4 +164,13 @@ public class Generic {
         }
     }
 
+    public boolean isTestRunnable(String testCaseName){
+        String runMode = TestBase.excelTestCases.get(testCaseName).get("RunMode").toString();
+        if (runMode.equalsIgnoreCase("Y")){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }

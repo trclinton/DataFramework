@@ -25,11 +25,4 @@
             <class name="testcases.OpenAccountTest"></class>
         </classes>
     </test>
-
-    <test name="Customer Verification">
-        <classes>
-            <class name="testcases.CustomersTest"></class>
-        </classes>
-    </test>
-
 </suite>

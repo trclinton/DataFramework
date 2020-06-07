@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Dat_Driven_TestCases">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,7 +107,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Dat_Driven_TestCases" title="testcases.AddCustomerTest" hash-for-method="addCustomer">addCustomer</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Dat_Driven_TestCases" title="testcases.AddCustomerTest" hash-for-method="addCustomers(Reynold, Clinton, 560016.0)">addCustomers(Reynold, Clinton, 560016.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Dat_Driven_TestCases" title="testcases.AddCustomerTest" hash-for-method="addCustomers(Shenika, Joe, 560016.0)">addCustomers(Shenika, Joe, 560016.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Dat_Driven_TestCases" title="testcases.AddCustomerTest" hash-for-method="addCustomers(Carlton, Daniel, 560016.0)">addCustomers(Carlton, Daniel, 560016.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Dat_Driven_TestCases" title="testcases.OpenAccountTest" hash-for-method="openAccount">openAccount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Dat_Driven_TestCases -->
@@ -145,9 +160,41 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addCustomer">
-                  </a> <!-- addCustomer -->
-                  <span class="method-name">addCustomer</span>
+                  <a name="addCustomers(Reynold, Clinton, 560016.0)">
+                  </a> <!-- addCustomers(Reynold, Clinton, 560016.0) -->
+                  <span class="method-name">addCustomers</span>
+                  <span class="parameters">(Reynold, Clinton, 560016.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomers(Shenika, Joe, 560016.0)">
+                  </a> <!-- addCustomers(Shenika, Joe, 560016.0) -->
+                  <span class="method-name">addCustomers</span>
+                  <span class="parameters">(Shenika, Joe, 560016.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomers(Carlton, Daniel, 560016.0)">
+                  </a> <!-- addCustomers(Carlton, Daniel, 560016.0) -->
+                  <span class="method-name">addCustomers</span>
+                  <span class="parameters">(Carlton, Daniel, 560016.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Dat_Driven_TestCases-class-passed -->
+          <div class="suite-Dat_Driven_TestCases-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.OpenAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openAccount">
+                  </a> <!-- openAccount -->
+                  <span class="method-name">openAccount</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -177,6 +224,11 @@
       &lt;class name=&quot;testcases.AddCustomerTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Add Customer Test --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Open Account&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.OpenAccountTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Open Account --&gt;
 &lt;/suite&gt; &lt;!-- Dat Driven TestCases --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -192,6 +244,9 @@
               </li>
               <li>
                 <span class="test-name">Add Customer Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Open Account (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -217,20 +272,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addCustomer')
-data.setCell(0, 2, 'testcases.AddCustomerTest')
-data.setCell(0, 3, 2327);
+data.setCell(0, 1, 'openAccount')
+data.setCell(0, 2, 'testcases.OpenAccountTest')
+data.setCell(0, 3, 4367);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LoginAsBankManager')
-data.setCell(1, 2, 'testcases.LoginTest')
-data.setCell(1, 3, 1203);
+data.setCell(1, 1, 'addCustomers')
+data.setCell(1, 2, 'testcases.AddCustomerTest')
+data.setCell(1, 3, 3668);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addCustomers')
+data.setCell(2, 2, 'testcases.AddCustomerTest')
+data.setCell(2, 3, 2369);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addCustomers')
+data.setCell(3, 2, 'testcases.AddCustomerTest')
+data.setCell(3, 3, 2327);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'LoginAsBankManager')
+data.setCell(4, 2, 'testcases.LoginTest')
+data.setCell(4, 3, 1318);
 window.suiteTableData['Dat_Driven_TestCases']= { tableData: data, tableDiv: 'times-div-Dat_Driven_TestCases'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Dat_Driven_TestCases">
               </div> <!-- times-div-Dat_Driven_TestCases -->
             </div> <!-- times-div -->
@@ -245,24 +312,79 @@ return data;
               <span class="reporter-method-name">LoginAsBankManager</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Page loaded successfully</span>
+                <span class="reporter-method-output">Verification is Successful</span>
                 <span class="reporter-method-output">Bank Manager Login Button is displayed on the web page</span>
                 <span class="reporter-method-output">Successfully clicked on: Bank Manager Login Button</span>
                 <span class="reporter-method-output">Add Customer Button is displayed on the web page</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">addCustomer</span>
+              <span class="reporter-method-name">addCustomers(Reynold, Clinton, 560016.0)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Add Customer Button is displayed on the web page</span>
                 <span class="reporter-method-output">Successfully clicked on: Add Customer Button</span>
-                <span class="reporter-method-output">First Name Text Box is displayed on the web page</span>
-                <span class="reporter-method-output">Found : First Name Text Box and value has been set as Reynold</span>
-                <span class="reporter-method-output">Last Name Text Box is displayed on the web page</span>
-                <span class="reporter-method-output">Found : Last Name Text Box and value has been set as Clinton</span>
-                <span class="reporter-method-output">Postal Code is displayed on the web page</span>
-                <span class="reporter-method-output">Found : Postal Code and value has been set as 560016.0</span>
+                <span class="reporter-method-output">FirstName TextBox is displayed on the web page</span>
+                <span class="reporter-method-output">Found : FirstName TextBox and value has been set as Reynold</span>
+                <span class="reporter-method-output">LastName TextBox is displayed on the web page</span>
+                <span class="reporter-method-output">Found : LastName TextBox and value has been set as Clinton</span>
+                <span class="reporter-method-output">PostalCode TextBox is displayed on the web page</span>
+                <span class="reporter-method-output">Found : PostalCode TextBox and value has been set as 560016.0</span>
                 <span class="reporter-method-output">Add Customer Submit Button is displayed on the web page</span>
                 <span class="reporter-method-output">Successfully clicked on: Add Customer Submit Button</span>
+                <span class="reporter-method-output">Alert Handled Successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addCustomers(Shenika, Joe, 560016.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Add Customer Button is displayed on the web page</span>
+                <span class="reporter-method-output">Successfully clicked on: Add Customer Button</span>
+                <span class="reporter-method-output">FirstName TextBox is displayed on the web page</span>
+                <span class="reporter-method-output">Found : FirstName TextBox and value has been set as Shenika</span>
+                <span class="reporter-method-output">LastName TextBox is displayed on the web page</span>
+                <span class="reporter-method-output">Found : LastName TextBox and value has been set as Joe</span>
+                <span class="reporter-method-output">PostalCode TextBox is displayed on the web page</span>
+                <span class="reporter-method-output">Found : PostalCode TextBox and value has been set as 560016.0</span>
+                <span class="reporter-method-output">Add Customer Submit Button is displayed on the web page</span>
+                <span class="reporter-method-output">Successfully clicked on: Add Customer Submit Button</span>
+                <span class="reporter-method-output">Alert Handled Successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addCustomers(Carlton, Daniel, 560016.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Add Customer Button is displayed on the web page</span>
+                <span class="reporter-method-output">Successfully clicked on: Add Customer Button</span>
+                <span class="reporter-method-output">FirstName TextBox is displayed on the web page</span>
+                <span class="reporter-method-output">Found : FirstName TextBox and value has been set as Carlton</span>
+                <span class="reporter-method-output">LastName TextBox is displayed on the web page</span>
+                <span class="reporter-method-output">Found : LastName TextBox and value has been set as Daniel</span>
+                <span class="reporter-method-output">PostalCode TextBox is displayed on the web page</span>
+                <span class="reporter-method-output">Found : PostalCode TextBox and value has been set as 560016.0</span>
+                <span class="reporter-method-output">Add Customer Submit Button is displayed on the web page</span>
+                <span class="reporter-method-output">Successfully clicked on: Add Customer Submit Button</span>
+                <span class="reporter-method-output">Alert Handled Successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">openAccount</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">OpenAccount Button is displayed on the web page</span>
+                <span class="reporter-method-output">Successfully clicked on: OpenAccount Button</span>
+                <span class="reporter-method-output">Found : Customer Dropdown</span>
+                <span class="reporter-method-output">Found : Currency Dropdown</span>
+                <span class="reporter-method-output">Process Button is displayed on the web page</span>
+                <span class="reporter-method-output">Successfully clicked on: Process Button</span>
+                <span class="reporter-method-output">Alert Handled Successfully</span>
+                <span class="reporter-method-output">Found : Customer Dropdown</span>
+                <span class="reporter-method-output">Found : Currency Dropdown</span>
+                <span class="reporter-method-output">Process Button is displayed on the web page</span>
+                <span class="reporter-method-output">Successfully clicked on: Process Button</span>
+                <span class="reporter-method-output">Alert Handled Successfully</span>
+                <span class="reporter-method-output">Found : Customer Dropdown</span>
+                <span class="reporter-method-output">Found : Currency Dropdown</span>
+                <span class="reporter-method-output">Process Button is displayed on the web page</span>
+                <span class="reporter-method-output">Successfully clicked on: Process Button</span>
                 <span class="reporter-method-output">Alert Handled Successfully</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -281,7 +403,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.AddCustomerTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.OpenAccountTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
@@ -291,18 +413,33 @@ return data;
               <div class="chronological-class-name">testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">LoginAsBankManager</span>
-                <span class="method-start">9588 ms</span>
+                <span class="method-start">7784 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.AddCustomerTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">addCustomer</span>
-                <span class="method-start">10821 ms</span>
+                <span class="method-name">addCustomers(Reynold, Clinton, 560016.0)</span>
+                <span class="method-start">9151 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addCustomers(Shenika, Joe, 560016.0)</span>
+                <span class="method-start">12819 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addCustomers(Carlton, Daniel, 560016.0)</span>
+                <span class="method-start">15189 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.OpenAccountTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openAccount</span>
+                <span class="method-start">17541 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">13154 ms</span>
+                <span class="method-name">flushReports</span>
+                <span class="method-start">21917 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

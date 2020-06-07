@@ -11,7 +11,9 @@ public class OpenAccountTest extends TestBase {
         int account1 = fetchAccountNumber("Reynold Clinton");
         int account2 = fetchAccountNumber("Shenika Joe");
         int account3 = fetchAccountNumber("Carlton Daniel");
-
+        System.out.println(account1);
+        System.out.println(account2);
+        System.out.println(account3);
         Thread.sleep(1000);
     }
     public int fetchAccountNumber(String customerName){

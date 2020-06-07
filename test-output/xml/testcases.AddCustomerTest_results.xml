@@ -1,15 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Add Customer Test"
            tests="3"
-           failures="0"
+           failures="3"
            errors="0"
            skipped="0"
-           time="9.260">
+           time="0.001">
   <properties />
+            <testcase name="addCustomers" time="0.000" classname="testcases.AddCustomerTest">
+                <failure type="java.lang.NullPointerException"
+                  message="(null)"
+              >
+<![CDATA[java.lang.NullPointerException
+  utilities.Generic.isTestRunnable(Generic.java:168)
+  listeners.CustomListeners.onTestStart(CustomListeners.java:58)
+  org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:73)
+  org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:210)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:557)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
+  org.testng.TestRunner.privateRun(TestRunner.java:770)
+  org.testng.TestRunner.run(TestRunner.java:591)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+  org.testng.SuiteRunner.run(SuiteRunner.java:304)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+  org.testng.TestNG.runSuites(TestNG.java:1032)
+  org.testng.TestNG.run(TestNG.java:1000)
+  org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+  org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="addCustomers" time="0.000" classname="testcases.AddCustomerTest">
+                <failure type="java.lang.NullPointerException"
+                  message="(null)"
+              >
+<![CDATA[java.lang.NullPointerException
+  utilities.Generic.isTestRunnable(Generic.java:168)
+  listeners.CustomListeners.onTestStart(CustomListeners.java:58)
+  org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:73)
+  org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:210)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:557)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
+  org.testng.TestRunner.privateRun(TestRunner.java:770)
+  org.testng.TestRunner.run(TestRunner.java:591)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+  org.testng.SuiteRunner.run(SuiteRunner.java:304)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+  org.testng.TestNG.runSuites(TestNG.java:1032)
+  org.testng.TestNG.run(TestNG.java:1000)
+  org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+  org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="addCustomers" time="0.001" classname="testcases.AddCustomerTest">
+                <failure type="java.lang.NullPointerException"
+                  message="(null)"
+              >
+<![CDATA[java.lang.NullPointerException
+  utilities.Generic.isTestRunnable(Generic.java:168)
+  listeners.CustomListeners.onTestStart(CustomListeners.java:58)
+  org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:73)
+  org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:210)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:557)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
+  org.testng.TestRunner.privateRun(TestRunner.java:770)
+  org.testng.TestRunner.run(TestRunner.java:591)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+  org.testng.SuiteRunner.run(SuiteRunner.java:304)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+  org.testng.TestNG.runSuites(TestNG.java:1032)
+  org.testng.TestNG.run(TestNG.java:1000)
+  org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+  org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="addCustomers" time="3.972" classname="testcases.AddCustomerTest" />
-                <testcase name="addCustomers" time="2.551" classname="testcases.AddCustomerTest" />
-                <testcase name="addCustomers" time="2.737" classname="testcases.AddCustomerTest" />
-      
+  
 </testsuite>

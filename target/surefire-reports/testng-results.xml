@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
     <line>
       <![CDATA[Page loaded successfully]]>
+    </line>
+    <line>
+      <![CDATA[Verification is Successful]]>
     </line>
     <line>
       <![CDATA[Bank Manager Login Button is displayed on the web page]]>
@@ -20,22 +23,22 @@
       <![CDATA[Successfully clicked on: Add Customer Button]]>
     </line>
     <line>
-      <![CDATA[First Name Text Box is displayed on the web page]]>
+      <![CDATA[FirstName TextBox is displayed on the web page]]>
     </line>
     <line>
-      <![CDATA[Found : First Name Text Box and value has been set as Reynold]]>
+      <![CDATA[Found : FirstName TextBox and value has been set as Reynold]]>
     </line>
     <line>
-      <![CDATA[Last Name Text Box is displayed on the web page]]>
+      <![CDATA[LastName TextBox is displayed on the web page]]>
     </line>
     <line>
-      <![CDATA[Found : Last Name Text Box and value has been set as Clinton]]>
+      <![CDATA[Found : LastName TextBox and value has been set as Clinton]]>
     </line>
     <line>
-      <![CDATA[Postal Code is displayed on the web page]]>
+      <![CDATA[PostalCode TextBox is displayed on the web page]]>
     </line>
     <line>
-      <![CDATA[Found : Postal Code and value has been set as 560016.0]]>
+      <![CDATA[Found : PostalCode TextBox and value has been set as 560016.0]]>
     </line>
     <line>
       <![CDATA[Add Customer Submit Button is displayed on the web page]]>
@@ -46,16 +49,136 @@
     <line>
       <![CDATA[Alert Handled Successfully]]>
     </line>
+    <line>
+      <![CDATA[Add Customer Button is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Successfully clicked on: Add Customer Button]]>
+    </line>
+    <line>
+      <![CDATA[FirstName TextBox is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Found : FirstName TextBox and value has been set as Shenika]]>
+    </line>
+    <line>
+      <![CDATA[LastName TextBox is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Found : LastName TextBox and value has been set as Joe]]>
+    </line>
+    <line>
+      <![CDATA[PostalCode TextBox is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Found : PostalCode TextBox and value has been set as 560016.0]]>
+    </line>
+    <line>
+      <![CDATA[Add Customer Submit Button is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Successfully clicked on: Add Customer Submit Button]]>
+    </line>
+    <line>
+      <![CDATA[Alert Handled Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Add Customer Button is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Successfully clicked on: Add Customer Button]]>
+    </line>
+    <line>
+      <![CDATA[FirstName TextBox is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Found : FirstName TextBox and value has been set as Carlton]]>
+    </line>
+    <line>
+      <![CDATA[LastName TextBox is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Found : LastName TextBox and value has been set as Daniel]]>
+    </line>
+    <line>
+      <![CDATA[PostalCode TextBox is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Found : PostalCode TextBox and value has been set as 560016.0]]>
+    </line>
+    <line>
+      <![CDATA[Add Customer Submit Button is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Successfully clicked on: Add Customer Submit Button]]>
+    </line>
+    <line>
+      <![CDATA[Alert Handled Successfully]]>
+    </line>
+    <line>
+      <![CDATA[OpenAccount Button is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Successfully clicked on: OpenAccount Button]]>
+    </line>
+    <line>
+      <![CDATA[Found : Customer Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Found : Currency Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Process Button is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Successfully clicked on: Process Button]]>
+    </line>
+    <line>
+      <![CDATA[Alert Handled Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Found : Customer Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Found : Currency Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Process Button is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Successfully clicked on: Process Button]]>
+    </line>
+    <line>
+      <![CDATA[Alert Handled Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Found : Customer Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Found : Currency Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Process Button is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Successfully clicked on: Process Button]]>
+    </line>
+    <line>
+      <![CDATA[Alert Handled Successfully]]>
+    </line>
   </reporter-output>
-  <suite name="Dat Driven TestCases" duration-ms="3592" started-at="2020-05-24T18:08:46 IST" finished-at="2020-05-24T18:08:49 IST">
+  <suite name="Dat Driven TestCases" duration-ms="14155" started-at="2020-06-07T20:49:20 IST" finished-at="2020-06-07T20:49:34 IST">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="1238" started-at="2020-05-24T18:08:46 IST" finished-at="2020-05-24T18:08:47 IST">
+    <test name="Login Test" duration-ms="1353" started-at="2020-06-07T20:49:20 IST" finished-at="2020-06-07T20:49:21 IST">
       <class name="testcases.LoginTest">
-        <test-method status="PASS" signature="LoginAsBankManager()[pri:0, instance:testcases.LoginTest@5677323c]" name="LoginAsBankManager" duration-ms="1203" started-at="2020-05-24T18:08:46 IST" finished-at="2020-05-24T18:08:47 IST">
+        <test-method status="PASS" signature="LoginAsBankManager()[pri:0, instance:testcases.LoginTest@51c668e3]" name="LoginAsBankManager" duration-ms="1318" started-at="2020-06-07T20:49:20 IST" finished-at="2020-06-07T20:49:21 IST">
           <reporter-output>
             <line>
               <![CDATA[Page loaded successfully]]>
+            </line>
+            <line>
+              <![CDATA[Verification is Successful]]>
             </line>
             <line>
               <![CDATA[Bank Manager Login Button is displayed on the web page]]>
@@ -70,13 +193,26 @@
         </test-method> <!-- LoginAsBankManager -->
       </class> <!-- testcases.LoginTest -->
     </test> <!-- Login Test -->
-    <test name="Add Customer Test" duration-ms="2329" started-at="2020-05-24T18:08:47 IST" finished-at="2020-05-24T18:08:49 IST">
+    <test name="Add Customer Test" duration-ms="8373" started-at="2020-06-07T20:49:21 IST" finished-at="2020-06-07T20:49:29 IST">
       <class name="testcases.AddCustomerTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.AddCustomerTest@3e27aa33]" name="setUp" is-config="true" duration-ms="9557" started-at="2020-05-24T18:08:36 IST" finished-at="2020-05-24T18:08:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addCustomer()[pri:0, instance:testcases.AddCustomerTest@3e27aa33]" name="addCustomer" duration-ms="2327" started-at="2020-05-24T18:08:47 IST" finished-at="2020-05-24T18:08:49 IST">
+        <test-method status="PASS" signature="addCustomers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@738dc9b]" name="addCustomers" duration-ms="3668" started-at="2020-06-07T20:49:21 IST" data-provider="CustomerDetails" finished-at="2020-06-07T20:49:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Reynold]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Clinton]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[560016.0]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
               <![CDATA[Add Customer Button is displayed on the web page]]>
@@ -85,22 +221,22 @@
               <![CDATA[Successfully clicked on: Add Customer Button]]>
             </line>
             <line>
-              <![CDATA[First Name Text Box is displayed on the web page]]>
+              <![CDATA[FirstName TextBox is displayed on the web page]]>
             </line>
             <line>
-              <![CDATA[Found : First Name Text Box and value has been set as Reynold]]>
+              <![CDATA[Found : FirstName TextBox and value has been set as Reynold]]>
             </line>
             <line>
-              <![CDATA[Last Name Text Box is displayed on the web page]]>
+              <![CDATA[LastName TextBox is displayed on the web page]]>
             </line>
             <line>
-              <![CDATA[Found : Last Name Text Box and value has been set as Clinton]]>
+              <![CDATA[Found : LastName TextBox and value has been set as Clinton]]>
             </line>
             <line>
-              <![CDATA[Postal Code is displayed on the web page]]>
+              <![CDATA[PostalCode TextBox is displayed on the web page]]>
             </line>
             <line>
-              <![CDATA[Found : Postal Code and value has been set as 560016.0]]>
+              <![CDATA[Found : PostalCode TextBox and value has been set as 560016.0]]>
             </line>
             <line>
               <![CDATA[Add Customer Submit Button is displayed on the web page]]>
@@ -112,12 +248,183 @@
               <![CDATA[Alert Handled Successfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- addCustomer -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.AddCustomerTest@3e27aa33]" name="tearDown" is-config="true" duration-ms="1579" started-at="2020-05-24T18:08:49 IST" finished-at="2020-05-24T18:08:51 IST">
+        </test-method> <!-- addCustomers -->
+        <test-method status="PASS" signature="addCustomers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@738dc9b]" name="addCustomers" duration-ms="2369" started-at="2020-06-07T20:49:25 IST" data-provider="CustomerDetails" finished-at="2020-06-07T20:49:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shenika]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Joe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[560016.0]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Add Customer Button is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Successfully clicked on: Add Customer Button]]>
+            </line>
+            <line>
+              <![CDATA[FirstName TextBox is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Found : FirstName TextBox and value has been set as Shenika]]>
+            </line>
+            <line>
+              <![CDATA[LastName TextBox is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Found : LastName TextBox and value has been set as Joe]]>
+            </line>
+            <line>
+              <![CDATA[PostalCode TextBox is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Found : PostalCode TextBox and value has been set as 560016.0]]>
+            </line>
+            <line>
+              <![CDATA[Add Customer Submit Button is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Successfully clicked on: Add Customer Submit Button]]>
+            </line>
+            <line>
+              <![CDATA[Alert Handled Successfully]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- addCustomers -->
+        <test-method status="PASS" signature="addCustomers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@738dc9b]" name="addCustomers" duration-ms="2327" started-at="2020-06-07T20:49:27 IST" data-provider="CustomerDetails" finished-at="2020-06-07T20:49:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Carlton]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Daniel]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[560016.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Add Customer Button is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Successfully clicked on: Add Customer Button]]>
+            </line>
+            <line>
+              <![CDATA[FirstName TextBox is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Found : FirstName TextBox and value has been set as Carlton]]>
+            </line>
+            <line>
+              <![CDATA[LastName TextBox is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Found : LastName TextBox and value has been set as Daniel]]>
+            </line>
+            <line>
+              <![CDATA[PostalCode TextBox is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Found : PostalCode TextBox and value has been set as 560016.0]]>
+            </line>
+            <line>
+              <![CDATA[Add Customer Submit Button is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Successfully clicked on: Add Customer Submit Button]]>
+            </line>
+            <line>
+              <![CDATA[Alert Handled Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCustomers -->
       </class> <!-- testcases.AddCustomerTest -->
     </test> <!-- Add Customer Test -->
+    <test name="Open Account" duration-ms="4368" started-at="2020-06-07T20:49:29 IST" finished-at="2020-06-07T20:49:34 IST">
+      <class name="testcases.OpenAccountTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.OpenAccountTest@3646a422]" name="setUp" is-config="true" duration-ms="7754" started-at="2020-06-07T20:49:12 IST" finished-at="2020-06-07T20:49:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="openAccount()[pri:0, instance:testcases.OpenAccountTest@3646a422]" name="openAccount" duration-ms="4367" started-at="2020-06-07T20:49:29 IST" finished-at="2020-06-07T20:49:34 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[OpenAccount Button is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Successfully clicked on: OpenAccount Button]]>
+            </line>
+            <line>
+              <![CDATA[Found : Customer Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Found : Currency Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Process Button is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Successfully clicked on: Process Button]]>
+            </line>
+            <line>
+              <![CDATA[Alert Handled Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Found : Customer Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Found : Currency Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Process Button is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Successfully clicked on: Process Button]]>
+            </line>
+            <line>
+              <![CDATA[Alert Handled Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Found : Customer Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Found : Currency Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Process Button is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Successfully clicked on: Process Button]]>
+            </line>
+            <line>
+              <![CDATA[Alert Handled Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openAccount -->
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testcases.OpenAccountTest@3646a422]" name="flushReports" is-config="true" duration-ms="1423" started-at="2020-06-07T20:49:34 IST" finished-at="2020-06-07T20:49:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- testcases.OpenAccountTest -->
+    </test> <!-- Open Account -->
   </suite> <!-- Dat Driven TestCases -->
 </testng-results>
