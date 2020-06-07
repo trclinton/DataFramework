@@ -7,11 +7,13 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 
 import java.io.IOException;
+import java.util.List;
 
 public class Generic {
 
@@ -93,15 +95,44 @@ public class Generic {
         }
     }
 
-    public void selectDropdownValues(){
-
+    public void selectDropdownValues(Object drop_box_element, String text_to_be_selected, String dropdown_elementName){
+        try {
+            waitForElementPresent(drop_box_element.toString(), dropdown_elementName);
+            List<WebElement> dropDownElements = TestBase.driver.findElements(By.cssSelector(drop_box_element.toString()));
+            for (int i=0;i<dropDownElements.size();i++) {
+                String name = dropDownElements.get(i).getText();
+                if (name.equalsIgnoreCase(text_to_be_selected)) {
+                    TestBase.log.debug("Found : " + text_to_be_selected + " in the dropdown");
+                    Reporter.log("Found : " + text_to_be_selected + " in the dropdown");
+                    TestBase.test.log(Status.PASS, MarkupHelper.createLabel("Found : " + text_to_be_selected + " in the dropdown", ExtentColor.GREEN));
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            TestBase.log.debug("Unable to find dropdown web element : " + dropdown_elementName);
+            Reporter.log("Unable to find dropdown web element : " + dropdown_elementName);
+            TestBase.test.log(Status.FAIL, MarkupHelper.createLabel("Unable to find dropdown web element : " + dropdown_elementName, ExtentColor.RED));
+        }
+        try {
+            Select customerNames = new Select(TestBase.driver.findElement(By.cssSelector(drop_box_element.toString())));
+            customerNames.selectByVisibleText(text_to_be_selected);
+            TestBase.log.debug("Found : " + dropdown_elementName);
+            Reporter.log("Found : " + dropdown_elementName);
+            TestBase.test.log(Status.PASS, MarkupHelper.createLabel("Found : " + dropdown_elementName, ExtentColor.GREEN));
+        } catch (Exception e) {
+            e.printStackTrace();
+            TestBase.log.debug("Unable to find dropdown web element : " + dropdown_elementName);
+            Reporter.log("Unable to find dropdown web element : " + dropdown_elementName);
+            TestBase.test.log(Status.FAIL, MarkupHelper.createLabel("Unable to find dropdown web element : " + dropdown_elementName, ExtentColor.RED));
+        }
     }
 
-    public void handleAlerts(String AlertText) {
+    public String handleAlerts(String AlertText) {
         wait = new WebDriverWait(TestBase.driver, 20);
+        String actualText = "";
         try {
             Alert alert = wait.until(ExpectedConditions.alertIsPresent());
-            String actualText = alert.getText();
+            actualText = alert.getText();
             String expectedText = AlertText;
             Assert.assertTrue(alert.getText().contains(AlertText));
             alert.accept();
@@ -115,6 +146,7 @@ public class Generic {
             Reporter.log("There was no Alert found");
             TestBase.test.log(Status.FAIL, MarkupHelper.createLabel("There was no Alert found", ExtentColor.RED));
         }
+        return actualText;
     }
 
     public void verifyEquals(String actual, String expected) throws IOException {

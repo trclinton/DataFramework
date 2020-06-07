@@ -10,7 +10,11 @@
     },
     "OpenAccount": {
       "openAccountButton": "button[ng-click='openAccount()']",
-      "customerSelectDropdown": "select[name='userSelect']"
+      "customerSelectDropdown": "select[name='userSelect']",
+      "currencySelectDropdown": "select[name='currency']",
+      "processButton" : "button[type='submit']"
+    },
+    "Customers": {
     }
   },
   "customer": {

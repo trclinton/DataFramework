@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="8.209">
+           time="9.260">
   <properties />
   
   
-            <testcase name="addCustomers" time="2.440" classname="testcases.AddCustomerTest" />
-                <testcase name="addCustomers" time="2.447" classname="testcases.AddCustomerTest" />
-                <testcase name="addCustomers" time="3.322" classname="testcases.AddCustomerTest" />
+            <testcase name="addCustomers" time="3.972" classname="testcases.AddCustomerTest" />
+                <testcase name="addCustomers" time="2.551" classname="testcases.AddCustomerTest" />
+                <testcase name="addCustomers" time="2.737" classname="testcases.AddCustomerTest" />
       
 </testsuite>

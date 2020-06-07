@@ -9,7 +9,12 @@
       "addCustomerSubmitButton": "button[type='submit']"
     },
     "OpenAccount": {
-      "openAccountButton": "button[ng-click='openAccount()']"
+      "openAccountButton": "button[ng-click='openAccount()']",
+      "customerSelectDropdown": "select[name='userSelect']",
+      "currencySelectDropdown": "select[name='currency']",
+      "processButton" : "button[type='submit']"
+    },
+    "Customers": {
     }
   },
   "customer": {
