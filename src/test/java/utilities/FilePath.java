@@ -17,4 +17,11 @@ public class FilePath {
     public static String IEDriverPath = directory + "\\src\\test\\resources\\drivers\\IEDriverServer.exe";
     public static String screenshotsPath = directory + "\\src\\test\\resources\\Screenshots\\Screenshot_"+ dateTime +".jpg";
     public static String extentReportsPath = directory + "\\src\\test\\resources\\Screenshots\\extentReport.html";
+
+    //Outlook Mail Configuration
+    public static String server = "smtp-mail.outlook.com";
+    public static String from = "reynold.clinton@outlook.com";
+    public static String to = "trclinton88@gmail.com, reynold.clinton@yahoo.com";
+    public static String subject = "Extent Project Report";
+    public static String messageBody ="Kindly Click on the link to view the Report";
 }

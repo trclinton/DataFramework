@@ -7,13 +7,13 @@ import utilities.DataProviderClass;
 public class AddCustomerTest extends TestBase {
 
     @Test(dataProvider = "CustomerDetails", dataProviderClass = DataProviderClass.class)
-    public void addCustomers(String firstName, String lastName, String postalCode) throws InterruptedException {
-        genericKey.clickOnElement(addCustomer.get("addCustomerButton"), "Add Customer Button");
-        genericKey.setText(addCustomer.get("firstName"), firstName, "FirstName TextBox");
-        genericKey.setText(addCustomer.get("lastName"), lastName, "LastName TextBox");
-        genericKey.setText(addCustomer.get("postCode"), postalCode, "PostalCode TextBox");
-        genericKey.clickOnElement(addCustomer.get("addCustomerSubmitButton"), "Add Customer Submit Button");
-        genericKey.handleAlerts("Customer added successfully");
+    public void AddCustomers(String firstName, String lastName, String postalCode) throws InterruptedException {
+        WebUI.clickOnElement(addCustomer.get("addCustomerButton"), "Add Customer Button");
+        WebUI.setText(addCustomer.get("firstName"), firstName, "FirstName TextBox");
+        WebUI.setText(addCustomer.get("lastName"), lastName, "LastName TextBox");
+        WebUI.setText(addCustomer.get("postCode"), postalCode, "PostalCode TextBox");
+        WebUI.clickOnElement(addCustomer.get("addCustomerSubmitButton"), "Add Customer Submit Button");
+        WebUI.handleAlerts("Customer added successfully");
         Thread.sleep(1000);
     }
 

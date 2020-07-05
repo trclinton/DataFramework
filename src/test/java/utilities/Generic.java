@@ -18,7 +18,6 @@ import java.util.List;
 public class Generic {
 
     public static WebDriverWait wait;
-
     public void waitForPageLoad() {
         try {
             JavascriptExecutor js = (JavascriptExecutor)TestBase.driver;

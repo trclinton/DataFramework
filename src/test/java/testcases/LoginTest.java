@@ -11,11 +11,11 @@ public class LoginTest extends TestBase {
 
     @Test
     public void LoginAsBankManager() throws IOException {
-        genericKey.waitForPageLoad();
+        WebUI.waitForPageLoad();
         String actual = TestBase.driver.getCurrentUrl();
         String expected = "http://www.way2automation.com/angularjs-protractor/banking/#/login";
-        genericKey.verifyEquals(actual, expected);
-        genericKey.clickOnElement(addCustomer.get("bankManagerLoginButton"), "Bank Manager Login Button");
-        genericKey.checkForElementDisplay(addCustomer.get("addCustomerButton"), "Add Customer Button");
+        WebUI.verifyEquals(actual, expected);
+        WebUI.clickOnElement(addCustomer.get("bankManagerLoginButton"), "Bank Manager Login Button");
+        WebUI.checkForElementDisplay(addCustomer.get("addCustomerButton"), "Add Customer Button");
     }
 }

@@ -25,15 +25,6 @@ import java.util.Map;
 import static java.lang.System.setProperty;
 
 public class TestBase {
-
-    /*json
-    * logs
-    * DB
-    * Extent Reports
-    * Excel
-    * Webdriver
-    * Mail*/
-
     public static WebDriver driver;
     public static JSONParser jsonParser = new JSONParser();
     public static ReadExcel read = new ReadExcel();
@@ -43,10 +34,11 @@ public class TestBase {
     public static Map addCustomer;
     public static Map openAccount;
     public static Logger log = Logger.getLogger("Banking Application");
-    public static Generic genericKey;
+    public static Generic WebUI;
     public static ExtentSparkReporter SparkReporter;
     public static ExtentReports extent;
     public static ExtentTest test;
+    public static String forJenkins_browser;
 
     @BeforeSuite
     public void setUp(){
@@ -70,26 +62,53 @@ public class TestBase {
                 addCustomer = ((Map)((Map) json_OR.get("bankManager")).get("addCustomer"));
                 openAccount = ((Map)((Map) json_OR.get("bankManager")).get("OpenAccount"));
                 String browser = excelConfigData.get("Browser").get("Data").toString();
-                genericKey = new Generic();
+                WebUI = new Generic();
 
-                if (browser.equalsIgnoreCase("chrome")){
-                    System.setProperty("webdriver.chrome.driver", FilePath.chromeDriverPath);
-                    driver = new ChromeDriver();
-                    log.debug("Launched Chrome Successfully");
-                    extent.setSystemInfo("Browser", browser);
+                if((System.getenv("browser") != null) && !System.getenv("browser").isEmpty()){
+                    forJenkins_browser = System.getenv("browser");
+
+                    if (forJenkins_browser.equalsIgnoreCase("chrome")){
+                        System.setProperty("webdriver.chrome.driver", FilePath.chromeDriverPath);
+                        driver = new ChromeDriver();
+                        log.debug("Launched Chrome Successfully");
+                        extent.setSystemInfo("Browser", browser);
+                    }
+                    else if (forJenkins_browser.equalsIgnoreCase("firefox")){
+                        System.setProperty("webdriver.gecko.driver", FilePath.geckoDriverPath);
+                        driver = new FirefoxDriver();
+                        log.debug("Launched Firefox Successfully");
+                        extent.setSystemInfo("Browser", browser);
+                    }
+                    else if (forJenkins_browser.equalsIgnoreCase("explorer")){
+                        System.setProperty("webdriver.ie.driver", FilePath.IEDriverPath);
+                        driver = new InternetExplorerDriver();
+                        log.debug("Launched IE Successfully");
+                        extent.setSystemInfo("Browser", browser);
+                    }
                 }
-                else if (browser.equalsIgnoreCase("firefox")){
-                    System.setProperty("webdriver.gecko.driver", FilePath.geckoDriverPath);
-                    driver = new FirefoxDriver();
-                    log.debug("Launched Firefox Successfully");
-                    extent.setSystemInfo("Browser", browser);
+
+                else{
+
+                    if (browser.equalsIgnoreCase("chrome")){
+                        System.setProperty("webdriver.chrome.driver", FilePath.chromeDriverPath);
+                        driver = new ChromeDriver();
+                        log.debug("Launched Chrome Successfully");
+                        extent.setSystemInfo("Browser", browser);
+                    }
+                    else if (browser.equalsIgnoreCase("firefox")){
+                        System.setProperty("webdriver.gecko.driver", FilePath.geckoDriverPath);
+                        driver = new FirefoxDriver();
+                        log.debug("Launched Firefox Successfully");
+                        extent.setSystemInfo("Browser", browser);
+                    }
+                    else if (browser.equalsIgnoreCase("explorer")){
+                        System.setProperty("webdriver.ie.driver", FilePath.IEDriverPath);
+                        driver = new InternetExplorerDriver();
+                        log.debug("Launched IE Successfully");
+                        extent.setSystemInfo("Browser", browser);
+                    }
                 }
-                else if (browser.equalsIgnoreCase("explorer")){
-                    setProperty("webdriver.ie.driver", FilePath.IEDriverPath);
-                    driver = new InternetExplorerDriver();
-                    log.debug("Launched IE Successfully");
-                    extent.setSystemInfo("Browser", browser);
-                }
+
                 try {
                     driver.get(banking_URL);
                     log.debug("Successfully navigated to URL: "+banking_URL);
@@ -117,6 +136,7 @@ public class TestBase {
         if (driver!=null){
             driver.quit();
             log.debug("Browser has been closed Successfully");
+
             extent.flush();
         }
     }

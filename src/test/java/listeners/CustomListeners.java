@@ -2,19 +2,24 @@ package listeners;
 
 import base.TestBase;
 import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
-import org.testng.Reporter;
-import org.testng.SkipException;
+import org.testng.*;
+import rough.HostAddress;
 import utilities.FilePath;
+import utilities.MonitorMails;
 
+import javax.mail.MessagingException;
 import java.io.File;
 import java.io.IOException;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
-public class CustomListeners extends TestBase implements ITestListener {
+public class CustomListeners extends TestBase implements ITestListener, ISuiteListener {
 
     public void onTestFailure(ITestResult result) {
 
@@ -48,12 +53,15 @@ public class CustomListeners extends TestBase implements ITestListener {
     // When Test case get Skipped, this method is called.
     public void onTestSkipped(ITestResult Result) {
         System.out.println("The name of the testcase Skipped is : " + Result.getName());
+        TestBase.log.debug(Result.getName() + " test has been Skipped.");
+        Reporter.log(Result.getName() + " test has been Skipped.");
+        TestBase.test.log(Status.SKIP, MarkupHelper.createLabel(Result.getName() + " test has been Skipped.", ExtentColor.BLUE));
     }
 
     // When Test case get Started, this method is called.
     public void onTestStart(ITestResult Result) {
         test = extent.createTest(Result.getName());
-        if (!genericKey.isTestRunnable(Result.getName())){
+        if (!WebUI.isTestRunnable(Result.getName())){
             throw new SkipException("Skipping the test "+ Result.getName().toUpperCase()+" as the RunMode has been set to 'N'");
         }
         System.out.println(Result.getName() + " test case started");
@@ -62,5 +70,21 @@ public class CustomListeners extends TestBase implements ITestListener {
     // When Test case get passed, this method is called.
     public void onTestSuccess(ITestResult Result) {
         System.out.println("The name of the testcase passed : " + Result.getName());
+    }
+
+    public void onFinish(ISuite arg0){
+
+        MonitorMails mails = new MonitorMails();
+        String localHostAddress = null;
+        try {
+            localHostAddress = "http://" + InetAddress.getLocalHost().getHostAddress() + ":8080/job/DataDrivenProject/Extent_20Report/";
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+        try {
+            mails.sendMail(FilePath.server, FilePath.from, FilePath.to, FilePath.subject, FilePath.messageBody + " : " + localHostAddress);
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
     }
 }
