@@ -2,42 +2,43 @@ package rough;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.Test;
 import utilities.FilePath;
 import utilities.ReadExcel;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.LinkedHashMap;
 
 public class WorkBench {
-
-    public void takeScreenShot(WebDriver driver, String fileWithPath){
-
-        TakesScreenshot scrShot =((TakesScreenshot) driver);
-        File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
-        File DestFile = new File(fileWithPath);
-
-        try {
-            FileUtils.copyFile(SrcFile, DestFile);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public static WebDriver driver;
+    @Test
+    public void grid1() throws MalformedURLException {
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        capabilities.setCapability("version", "83.0.4103.61");
+        capabilities.setPlatform(Platform.ANY);
+        driver = new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"), capabilities);
+        driver.get("https://www.google.com/");
+        driver.manage().window().maximize();
+        System.out.println(driver.getTitle());
     }
 
-    public static void main(String[] args) {
-
-        WorkBench wb = new WorkBench();
-
-        System.setProperty("webdriver.chrome.driver", FilePath.chromeDriverPath);
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.guru99.com/take-screenshot-selenium-webdriver.html");
-        String fileWithPath = "C:\\Users\\reyno\\IdeaProjects\\DataFramework\\src\\test\\resources\\Screenshots\\test.jpg";
-        wb.takeScreenShot(driver, fileWithPath);
-
-
-
+    @Test
+    public void grid2() throws MalformedURLException {
+        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+        capabilities.setCapability("version", "76.0.1");
+        capabilities.setPlatform(Platform.ANY);
+        driver = new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"), capabilities);
+        driver.get("https://in.yahoo.com/");
+        driver.manage().window().maximize();
+        System.out.println(driver.getTitle());
     }
 }

@@ -35,16 +35,13 @@ public class TestBase {
     public static Map openAccount;
     public static Logger log = Logger.getLogger("Banking Application");
     public static Generic WebUI;
-    public static ExtentSparkReporter SparkReporter;
-    public static ExtentReports extent;
+    public static ExtentSparkReporter SparkReporter = new ExtentSparkReporter(FilePath.extentReportsPath);
+    public static ExtentReports extent = new ExtentReports();
     public static ExtentTest test;
     public static String forJenkins_browser;
 
-    @BeforeSuite
+    @BeforeTest
     public void setUp(){
-
-        SparkReporter = new ExtentSparkReporter(FilePath.extentReportsPath);
-        extent = new ExtentReports();
         extent.attachReporter(SparkReporter);
         SparkReporter.config().setReportName("Execution Report");
         SparkReporter.config().setTheme(Theme.DARK);
@@ -65,8 +62,8 @@ public class TestBase {
                 WebUI = new Generic();
 
                 if((System.getenv("browser") != null) && !System.getenv("browser").isEmpty()){
-                    forJenkins_browser = System.getenv("browser");
 
+                    forJenkins_browser = System.getenv("browser");
                     if (forJenkins_browser.equalsIgnoreCase("chrome")){
                         System.setProperty("webdriver.chrome.driver", FilePath.chromeDriverPath);
                         driver = new ChromeDriver();
@@ -131,13 +128,15 @@ public class TestBase {
 
     }
 
-    @AfterSuite
+    @AfterTest
     public void flushReports(){
-        if (driver!=null){
-            driver.quit();
-            log.debug("Browser has been closed Successfully");
-
-            extent.flush();
+        if (driver==null) {
+            return;
         }
+        driver.quit();
+        driver = null;
+        log.debug("Browser has been closed Successfully");
+        extent.flush();
     }
+
 }

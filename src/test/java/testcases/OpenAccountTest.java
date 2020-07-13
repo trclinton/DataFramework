@@ -4,9 +4,8 @@ import base.TestBase;
 import org.testng.annotations.Test;
 
 public class OpenAccountTest extends TestBase {
-
-    @Test
     public void OpenAccount() throws InterruptedException {
+        WebUI.checkForElementDisplay(openAccount.get("openAccountButton"), "OpenAccount Button");
         WebUI.clickOnElement(openAccount.get("openAccountButton"), "OpenAccount Button");
         int account1 = fetchAccountNumber("Reynold Clinton");
         int account2 = fetchAccountNumber("Shenika Joe");

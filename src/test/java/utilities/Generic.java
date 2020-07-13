@@ -15,7 +15,7 @@ import org.testng.Reporter;
 import java.io.IOException;
 import java.util.List;
 
-public class Generic {
+public class Generic extends TestBase {
 
     public static WebDriverWait wait;
     public void waitForPageLoad() {

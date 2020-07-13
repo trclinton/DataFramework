@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Dat Driven TestCases">
+<suite name="Data Driven TestCases">
 
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
@@ -17,12 +17,6 @@
     <test name="Add Customer Test">
         <classes>
             <class name="testcases.AddCustomerTest"></class>
-        </classes>
-    </test>
-
-    <test name="Open Account">
-        <classes>
-            <class name="testcases.OpenAccountTest"></class>
         </classes>
     </test>
 </suite>

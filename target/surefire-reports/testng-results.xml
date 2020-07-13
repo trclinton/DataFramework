@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="5" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
     <line>
       <![CDATA[Page loaded successfully]]>
@@ -116,15 +116,63 @@
       <![CDATA[Alert Handled Successfully]]>
     </line>
     <line>
-      <![CDATA[OpenAccount test has been Skipped.]]>
+      <![CDATA[OpenAccount Button is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Successfully clicked on: OpenAccount Button]]>
+    </line>
+    <line>
+      <![CDATA[Found : Customer Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Found : Currency Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Process Button is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Successfully clicked on: Process Button]]>
+    </line>
+    <line>
+      <![CDATA[Alert Handled Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Found : Customer Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Found : Currency Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Process Button is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Successfully clicked on: Process Button]]>
+    </line>
+    <line>
+      <![CDATA[Alert Handled Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Found : Customer Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Found : Currency Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Process Button is displayed on the web page]]>
+    </line>
+    <line>
+      <![CDATA[Successfully clicked on: Process Button]]>
+    </line>
+    <line>
+      <![CDATA[Alert Handled Successfully]]>
     </line>
   </reporter-output>
-  <suite name="Dat Driven TestCases" duration-ms="9949" started-at="2020-07-05T21:26:42 IST" finished-at="2020-07-05T21:26:52 IST">
+  <suite name="Dat Driven TestCases" duration-ms="13878" started-at="2020-07-06T08:33:43 IST" finished-at="2020-07-06T08:33:57 IST">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="666" started-at="2020-07-05T21:26:42 IST" finished-at="2020-07-05T21:26:43 IST">
+    <test name="Login Test" duration-ms="1257" started-at="2020-07-06T08:33:43 IST" finished-at="2020-07-06T08:33:44 IST">
       <class name="testcases.LoginTest">
-        <test-method status="PASS" signature="LoginAsBankManager()[pri:0, instance:testcases.LoginTest@6574a52c]" name="LoginAsBankManager" duration-ms="627" started-at="2020-07-05T21:26:42 IST" finished-at="2020-07-05T21:26:43 IST">
+        <test-method status="PASS" signature="LoginAsBankManager()[pri:0, instance:testcases.LoginTest@6574a52c]" name="LoginAsBankManager" duration-ms="1208" started-at="2020-07-06T08:33:43 IST" finished-at="2020-07-06T08:33:44 IST">
           <reporter-output>
             <line>
               <![CDATA[Page loaded successfully]]>
@@ -145,9 +193,9 @@
         </test-method> <!-- LoginAsBankManager -->
       </class> <!-- testcases.LoginTest -->
     </test> <!-- Login Test -->
-    <test name="Add Customer Test" duration-ms="9202" started-at="2020-07-05T21:26:43 IST" finished-at="2020-07-05T21:26:52 IST">
+    <test name="Add Customer Test" duration-ms="7980" started-at="2020-07-06T08:33:45 IST" finished-at="2020-07-06T08:33:53 IST">
       <class name="testcases.AddCustomerTest">
-        <test-method status="PASS" signature="AddCustomers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@76a4ebf2]" name="AddCustomers" duration-ms="3955" started-at="2020-07-05T21:26:43 IST" data-provider="CustomerDetails" finished-at="2020-07-05T21:26:47 IST">
+        <test-method status="PASS" signature="AddCustomers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@76a4ebf2]" name="AddCustomers" duration-ms="3122" started-at="2020-07-06T08:33:45 IST" data-provider="CustomerDetails" finished-at="2020-07-06T08:33:48 IST">
           <params>
             <param index="0">
               <value>
@@ -201,7 +249,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- AddCustomers -->
-        <test-method status="PASS" signature="AddCustomers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@76a4ebf2]" name="AddCustomers" duration-ms="2662" started-at="2020-07-05T21:26:47 IST" data-provider="CustomerDetails" finished-at="2020-07-05T21:26:50 IST">
+        <test-method status="PASS" signature="AddCustomers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@76a4ebf2]" name="AddCustomers" duration-ms="2405" started-at="2020-07-06T08:33:48 IST" data-provider="CustomerDetails" finished-at="2020-07-06T08:33:50 IST">
           <params>
             <param index="0">
               <value>
@@ -255,7 +303,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- AddCustomers -->
-        <test-method status="PASS" signature="AddCustomers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@76a4ebf2]" name="AddCustomers" duration-ms="2573" started-at="2020-07-05T21:26:50 IST" data-provider="CustomerDetails" finished-at="2020-07-05T21:26:52 IST">
+        <test-method status="PASS" signature="AddCustomers(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@76a4ebf2]" name="AddCustomers" duration-ms="2444" started-at="2020-07-06T08:33:50 IST" data-provider="CustomerDetails" finished-at="2020-07-06T08:33:53 IST">
           <params>
             <param index="0">
               <value>
@@ -311,59 +359,68 @@
         </test-method> <!-- AddCustomers -->
       </class> <!-- testcases.AddCustomerTest -->
     </test> <!-- Add Customer Test -->
-    <test name="Open Account" duration-ms="12" started-at="2020-07-05T21:26:52 IST" finished-at="2020-07-05T21:26:52 IST">
+    <test name="Open Account" duration-ms="4566" started-at="2020-07-06T08:33:53 IST" finished-at="2020-07-06T08:33:57 IST">
       <class name="testcases.OpenAccountTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.OpenAccountTest@6e9175d8]" name="setUp" is-config="true" duration-ms="13909" started-at="2020-07-05T21:26:28 IST" finished-at="2020-07-05T21:26:42 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.OpenAccountTest@6e9175d8]" name="setUp" is-config="true" duration-ms="11057" started-at="2020-07-06T08:33:32 IST" finished-at="2020-07-06T08:33:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="OpenAccount()[pri:0, instance:testcases.OpenAccountTest@6e9175d8]" name="OpenAccount" duration-ms="1" started-at="2020-07-05T21:26:52 IST" finished-at="2020-07-05T21:26:52 IST">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping the test OPENACCOUNT as the RunMode has been set to 'N']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test OPENACCOUNT as the RunMode has been set to 'N'
-at listeners.CustomListeners.onTestStart(CustomListeners.java:65)
-at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:73)
-at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:210)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:557)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+        <test-method status="PASS" signature="OpenAccount()[pri:0, instance:testcases.OpenAccountTest@6e9175d8]" name="OpenAccount" duration-ms="4563" started-at="2020-07-06T08:33:53 IST" finished-at="2020-07-06T08:33:57 IST">
           <reporter-output>
             <line>
-              <![CDATA[OpenAccount test has been Skipped.]]>
+              <![CDATA[OpenAccount Button is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Successfully clicked on: OpenAccount Button]]>
+            </line>
+            <line>
+              <![CDATA[Found : Customer Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Found : Currency Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Process Button is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Successfully clicked on: Process Button]]>
+            </line>
+            <line>
+              <![CDATA[Alert Handled Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Found : Customer Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Found : Currency Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Process Button is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Successfully clicked on: Process Button]]>
+            </line>
+            <line>
+              <![CDATA[Alert Handled Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Found : Customer Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Found : Currency Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Process Button is displayed on the web page]]>
+            </line>
+            <line>
+              <![CDATA[Successfully clicked on: Process Button]]>
+            </line>
+            <line>
+              <![CDATA[Alert Handled Successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- OpenAccount -->
-        <test-method status="PASS" signature="flushReports()[pri:0, instance:testcases.OpenAccountTest@6e9175d8]" name="flushReports" is-config="true" duration-ms="1740" started-at="2020-07-05T21:26:52 IST" finished-at="2020-07-05T21:26:54 IST">
+        <test-method status="PASS" signature="flushReports()[pri:0, instance:testcases.OpenAccountTest@6e9175d8]" name="flushReports" is-config="true" duration-ms="1230" started-at="2020-07-06T08:33:57 IST" finished-at="2020-07-06T08:33:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReports -->
