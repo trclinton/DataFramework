@@ -1,7 +1,12 @@
 {
   "bankManager":{
-    "addCustomer": {
+    "LoginScreen": {
+      "PageHeading": "strong.mainHeading",
+      "CustomerLoginButton": "button[ng-click='customer()']",
       "bankManagerLoginButton": "button[ng-click='manager()']",
+      "HomeButton": "button[ng-click='home()']"
+    },
+    "addCustomer": {
       "addCustomerButton": "button[ng-click='addCust()']",
       "firstName": "input[placeholder='First Name']",
       "lastName": "input[placeholder='Last Name']",
@@ -13,11 +18,15 @@
       "customerSelectDropdown": "select[name='userSelect']",
       "currencySelectDropdown": "select[name='currency']",
       "processButton" : "button[type='submit']"
-    },
-    "Customers": {
     }
   },
-  "customer": {
 
+  "Customer": {
+    "YourNameSelect": "select#userSelect",
+    "loginButton": "button[type='submit']",
+    "depositTab": "button[ng-click='deposit()']",
+    "depositTextBox": "input[type='number']",
+    "depositButton": "button[type='submit']",
+    "message": "span[ng-show='message']"
   }
 }

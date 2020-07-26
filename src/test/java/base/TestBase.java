@@ -31,8 +31,7 @@ public class TestBase {
     public static LinkedHashMap<Object, LinkedHashMap<Object, Object>> excelConfigData = read.excelFileReader(FilePath.excelFilePath, "Config");
     public static LinkedHashMap<Object, LinkedHashMap<Object, Object>> excelTestData = read.excelFileReader(FilePath.excelFilePath, "TestData");
     public static LinkedHashMap<Object, LinkedHashMap<Object, Object>> excelTestCases = read.excelFileReader(FilePath.excelFilePath, "TestCases");
-    public static Map addCustomer;
-    public static Map openAccount;
+    public static Map addCustomer, openAccount, loginScreen, customer;
     public static Logger log = Logger.getLogger("Banking Application");
     public static Generic WebUI;
     public static ExtentSparkReporter SparkReporter = new ExtentSparkReporter(FilePath.extentReportsPath);
@@ -56,8 +55,11 @@ public class TestBase {
                 JSONObject json_OR = (JSONObject)OR_Object;
                 Map map_Application = ((Map) json_Config.get("banking"));
                 String banking_URL = (String) map_Application.get("url");
+                loginScreen = ((Map)((Map) json_OR.get("bankManager")).get("LoginScreen"));
                 addCustomer = ((Map)((Map) json_OR.get("bankManager")).get("addCustomer"));
                 openAccount = ((Map)((Map) json_OR.get("bankManager")).get("OpenAccount"));
+                customer = (Map) json_OR.get("Customer");
+
                 String browser = excelConfigData.get("Browser").get("Data").toString();
                 WebUI = new Generic();
 

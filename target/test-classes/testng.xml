@@ -10,13 +10,19 @@
 
     <test name="Login Test">
         <classes>
-            <class name="testcases.LoginTest" />
+            <class name="loginPage.testcases.LoginTest" />
         </classes>
     </test>
 
     <test name="Add Customer Test">
         <classes>
-            <class name="testcases.AddCustomerTest"></class>
+            <class name="bankManager.testcases.AddCustomerTest"></class>
+        </classes>
+    </test>
+
+    <test name="Customer Validation">
+        <classes>
+            <class name="customerLogin.testcases.HarryPotterCustomer"></class>
         </classes>
     </test>
 </suite>

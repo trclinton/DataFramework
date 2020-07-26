@@ -44,6 +44,21 @@ public class Generic extends TestBase {
             e.printStackTrace();
         }
     }
+    public String getPageTitle(){
+        String PageTitle  = "";
+        try {
+            PageTitle = TestBase.driver.getTitle();
+            TestBase.log.debug("Current Page Title is: "+PageTitle);
+            Reporter.log("Current Page Title is: "+PageTitle);
+            TestBase.test.log(Status.PASS, MarkupHelper.createLabel("Page Title is: "+PageTitle, ExtentColor.GREEN));
+        } catch (Exception e) {
+            e.printStackTrace();
+            TestBase.log.debug("Failed to Fetch the Page Title");
+            Reporter.log("Failed to Fetch the Page Title");
+            TestBase.test.log(Status.FAIL, MarkupHelper.createLabel("Failed to Fetch the Page Title", ExtentColor.RED));
+        }
+        return PageTitle;
+    }
 
     public boolean checkForElementDisplay(Object element_to_be_found, String elementName) {
         try {
@@ -76,6 +91,23 @@ public class Generic extends TestBase {
             Reporter.log("Failed to click on: " + elementName);
             TestBase.test.log(Status.FAIL, MarkupHelper.createLabel("Failed to click on: " + elementName, ExtentColor.RED));
         }
+    }
+
+    public String getText(Object element_textValue, String elementName){
+        String text = "";
+        try {
+            waitForElementPresent(element_textValue.toString(), elementName);
+            text = TestBase.driver.findElement(By.cssSelector(element_textValue.toString())).getText();
+            TestBase.log.debug("Element contains text: " + text);
+            Reporter.log("Element contains text: " + text);
+            TestBase.test.log(Status.PASS, MarkupHelper.createLabel("Element contains text: " + text, ExtentColor.GREEN));
+        } catch (Exception e) {
+            e.printStackTrace();
+            TestBase.log.debug("Failed to identify element: " + element_textValue);
+            Reporter.log("Failed to identify element: " + element_textValue);
+            TestBase.test.log(Status.FAIL, MarkupHelper.createLabel("Failed to identify element: " + element_textValue, ExtentColor.RED));
+        }
+        return text;
     }
 
     public void setText(Object text_box_element, Object text_to_be_entered, String elementName) {
@@ -159,7 +191,7 @@ public class Generic extends TestBase {
             TestBase.log.debug("Actual value is different than Expected: " + t.getMessage());
             Reporter.log("Actual value is different than Expected: " + t.getMessage());
             TestBase.test.fail("Actual value is different than Expected: " +  t.getMessage(),
-                    MediaEntityBuilder.createScreenCaptureFromPath(FilePath.screenshotsPath).build());
+            MediaEntityBuilder.createScreenCaptureFromPath(FilePath.screenshotsPath).build());
         }
     }
 

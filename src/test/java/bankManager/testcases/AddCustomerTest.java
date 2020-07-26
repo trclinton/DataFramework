@@ -1,4 +1,4 @@
-package testcases;
+package bankManager.testcases;
 
 import base.TestBase;
 import org.testng.annotations.AfterClass;
@@ -11,7 +11,7 @@ public class AddCustomerTest extends TestBase {
     @BeforeClass
     public void navigateToAddCustomer(){
         WebUI.waitForPageLoad();
-        WebUI.clickOnElement(addCustomer.get("bankManagerLoginButton"), "Bank Manager Login Button");
+        WebUI.clickOnElement(loginScreen.get("bankManagerLoginButton"), "Bank Manager Login Button");
         WebUI.checkForElementDisplay(addCustomer.get("addCustomerButton"), "Add Customer Button");
     }
 
