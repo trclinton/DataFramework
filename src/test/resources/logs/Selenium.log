@@ -1404,3 +1404,90 @@
 [main] DEBUG Banking Application  - Element contains text: Deposit Successful
 [main] DEBUG Banking Application  - Verification is Successful
 [main] DEBUG Banking Application  - Browser has been closed Successfully
+[main] DEBUG Banking Application  - Launched Chrome Successfully
+[main] DEBUG Banking Application  - Successfully navigated to URL: http://www.way2automation.com/angularjs-protractor/banking/#/login
+[main] DEBUG Banking Application  - Page loaded successfully
+[main] DEBUG Banking Application  - Verification is Successful
+[main] DEBUG Banking Application  - Current Page Title is: Protractor practice website - Banking App
+[main] DEBUG Banking Application  - Element contains text: XYZ Bank
+[main] DEBUG Banking Application  - Home Button is displayed on the web page
+[main] DEBUG Banking Application  - Customer Login Button is displayed on the web page
+[main] DEBUG Banking Application  - Bank Manager Login Button is displayed on the web page
+[main] DEBUG Banking Application  - Browser has been closed Successfully
+[main] DEBUG Banking Application  - Launched Chrome Successfully
+[main] DEBUG Banking Application  - Successfully navigated to URL: http://www.way2automation.com/angularjs-protractor/banking/#/login
+[main] DEBUG Banking Application  - Page loaded successfully
+[main] DEBUG Banking Application  - Bank Manager Login Button is displayed on the web page
+[main] DEBUG Banking Application  - Successfully clicked on: Bank Manager Login Button
+[main] DEBUG Banking Application  - Add Customer Button is displayed on the web page
+[main] DEBUG Banking Application  - Add Customer Button is displayed on the web page
+[main] DEBUG Banking Application  - Successfully clicked on: Add Customer Button
+[main] DEBUG Banking Application  - FirstName TextBox is displayed on the web page
+[main] DEBUG Banking Application  - Found : FirstName TextBox and value has been set as Reynold
+[main] DEBUG Banking Application  - LastName TextBox is displayed on the web page
+[main] DEBUG Banking Application  - Found : LastName TextBox and value has been set as Clinton
+[main] DEBUG Banking Application  - PostalCode TextBox is displayed on the web page
+[main] DEBUG Banking Application  - Found : PostalCode TextBox and value has been set as 560016.0
+[main] DEBUG Banking Application  - Add Customer Submit Button is displayed on the web page
+[main] DEBUG Banking Application  - Successfully clicked on: Add Customer Submit Button
+[main] DEBUG Banking Application  - Alert Handled Successfully
+[main] DEBUG Banking Application  - Add Customer Button is displayed on the web page
+[main] DEBUG Banking Application  - Successfully clicked on: Add Customer Button
+[main] DEBUG Banking Application  - FirstName TextBox is displayed on the web page
+[main] DEBUG Banking Application  - Found : FirstName TextBox and value has been set as Shenika
+[main] DEBUG Banking Application  - LastName TextBox is displayed on the web page
+[main] DEBUG Banking Application  - Found : LastName TextBox and value has been set as Joe
+[main] DEBUG Banking Application  - PostalCode TextBox is displayed on the web page
+[main] DEBUG Banking Application  - Found : PostalCode TextBox and value has been set as 560016.0
+[main] DEBUG Banking Application  - Add Customer Submit Button is displayed on the web page
+[main] DEBUG Banking Application  - Successfully clicked on: Add Customer Submit Button
+[main] DEBUG Banking Application  - Alert Handled Successfully
+[main] DEBUG Banking Application  - Add Customer Button is displayed on the web page
+[main] DEBUG Banking Application  - Successfully clicked on: Add Customer Button
+[main] DEBUG Banking Application  - FirstName TextBox is displayed on the web page
+[main] DEBUG Banking Application  - Found : FirstName TextBox and value has been set as Carlton
+[main] DEBUG Banking Application  - LastName TextBox is displayed on the web page
+[main] DEBUG Banking Application  - Found : LastName TextBox and value has been set as Daniel
+[main] DEBUG Banking Application  - PostalCode TextBox is displayed on the web page
+[main] DEBUG Banking Application  - Found : PostalCode TextBox and value has been set as 560016.0
+[main] DEBUG Banking Application  - Add Customer Submit Button is displayed on the web page
+[main] DEBUG Banking Application  - Successfully clicked on: Add Customer Submit Button
+[main] DEBUG Banking Application  - Alert Handled Successfully
+[main] DEBUG Banking Application  - OpenAccount Button is displayed on the web page
+[main] DEBUG Banking Application  - OpenAccount Button is displayed on the web page
+[main] DEBUG Banking Application  - Successfully clicked on: OpenAccount Button
+[main] DEBUG Banking Application  - Found : Customer Dropdown
+[main] DEBUG Banking Application  - Found : Currency Dropdown
+[main] DEBUG Banking Application  - Process Button is displayed on the web page
+[main] DEBUG Banking Application  - Successfully clicked on: Process Button
+[main] DEBUG Banking Application  - Alert Handled Successfully
+[main] DEBUG Banking Application  - Found : Customer Dropdown
+[main] DEBUG Banking Application  - Found : Currency Dropdown
+[main] DEBUG Banking Application  - Process Button is displayed on the web page
+[main] DEBUG Banking Application  - Successfully clicked on: Process Button
+[main] DEBUG Banking Application  - Alert Handled Successfully
+[main] DEBUG Banking Application  - Found : Customer Dropdown
+[main] DEBUG Banking Application  - Found : Currency Dropdown
+[main] DEBUG Banking Application  - Process Button is displayed on the web page
+[main] DEBUG Banking Application  - Successfully clicked on: Process Button
+[main] DEBUG Banking Application  - Alert Handled Successfully
+[main] DEBUG Banking Application  - Browser has been closed Successfully
+[main] DEBUG Banking Application  - Launched Chrome Successfully
+[main] DEBUG Banking Application  - Successfully navigated to URL: http://www.way2automation.com/angularjs-protractor/banking/#/login
+[main] DEBUG Banking Application  - Page loaded successfully
+[main] DEBUG Banking Application  - Customer Login Button is displayed on the web page
+[main] DEBUG Banking Application  - Successfully clicked on: Customer Login Button
+[main] DEBUG Banking Application  - YourName Dropdown is displayed on the web page
+[main] DEBUG Banking Application  - Found : YourName Dropdown
+[main] DEBUG Banking Application  - Login Button is displayed on the web page
+[main] DEBUG Banking Application  - Successfully clicked on: Login Button
+[main] DEBUG Banking Application  - Deposit Button is displayed on the web page
+[main] DEBUG Banking Application  - Deposit Button is displayed on the web page
+[main] DEBUG Banking Application  - Successfully clicked on: Deposit Button
+[main] DEBUG Banking Application  - Amount Deposit TextBox is displayed on the web page
+[main] DEBUG Banking Application  - Found : Amount Deposit TextBox and value has been set as 1000
+[main] DEBUG Banking Application  - Deposit Button is displayed on the web page
+[main] DEBUG Banking Application  - Successfully clicked on: Deposit Button
+[main] DEBUG Banking Application  - Element contains text: Deposit Successful
+[main] DEBUG Banking Application  - Verification is Successful
+[main] DEBUG Banking Application  - Browser has been closed Successfully

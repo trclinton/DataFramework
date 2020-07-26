@@ -22,8 +22,6 @@ import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import static java.lang.System.setProperty;
-
 public class TestBase {
     public static WebDriver driver;
     public static JSONParser jsonParser = new JSONParser();
